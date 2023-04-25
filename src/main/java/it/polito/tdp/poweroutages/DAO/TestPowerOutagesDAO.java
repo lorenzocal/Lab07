@@ -12,8 +12,9 @@ public class TestPowerOutagesDAO {
 			System.out.println("Connection Test PASSED");
 			
 			PowerOutageDAO dao = new PowerOutageDAO() ;
+			System.out.println(dao.getPowerOutageIdMap().get(49));
 			
-			System.out.println(dao.getNercList()) ;
+			
 
 		} catch (Exception e) {
 			System.err.println("Test FAILED");
